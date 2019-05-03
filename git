@@ -1,0 +1,23 @@
+
+Step1:
+-->Create new branch Release1.1 from Release1
+-->Megre 18.4 to Release1.1 [Re-slove megre conflict]
+-->Megre Release1.1 to Release1
+
+
+Step2:
+-->Create tag from 18.4
+Commands:                    Explanation:
+git checkout 18.4             --> checkout to the branch from where you want to create tag
+git branch --all              --> validating wether ur in a right branch or not
+git tag vR18.6.1                  --> create tag with Version number
+git push origin vR18.6.1       --> push tag to remote / origin / github
+git tag -l                     --> list of the tags
+
+-=-=--=-
+
+Delete git tag:
+
+Delete Local: git tag -d v18.6.1
+Delete remotly:  git push --delete origin v18.6.1
+-=-=--=-
